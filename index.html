@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Information Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>College Information Finder</h1>
+        <div class="search-box">
+            <input type="text" id="collegeName" placeholder="Enter College Name">
+            <button onclick="fetchCollegeData()">Search</button>
+        </div>
+        <div class="results">
+            <h2>Results:</h2>
+            <p><strong>Acceptance Rate:</strong> <span id="acceptanceRate"></span></p>
+            <p><strong>Tuition Costs:</strong></p>
+            <ul>
+                <li>In-State: <span id="inStateTuition"></span></li>
+                <li>Out-of-State: <span id="outStateTuition"></span></li>
+            </ul>
+            <p><strong>Average ACT Score:</strong> <span id="actScore"></span></p>
+            <p><strong>Average SAT Score:</strong> <span id="satScore"></span></p>
+            <p><strong>Weather/Scenery:</strong> <span id="weather"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
